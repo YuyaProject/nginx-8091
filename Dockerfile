@@ -1,5 +1,5 @@
 # production stage
-FROM nginx:1.18.0-alpine as production-stage
+FROM nginx:1.19.0-alpine as production-stage
 ENV TZ=Europe/Istanbul
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 WORKDIR /usr/share/nginx/html
